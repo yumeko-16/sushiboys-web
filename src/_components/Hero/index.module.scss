@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  padding: 100px 0;
+  overflow: hidden;
+  color: var(--white);
+}
+
+.logo {
+  width: min(92%, 500px);
+}

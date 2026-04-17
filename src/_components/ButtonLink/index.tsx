@@ -5,7 +5,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export default function ButtonLink({ href, children }: Props) {
+export function ButtonLink({ href, children }: Props) {
   return (
     <a className={styles.button} href={href}>
       {children}

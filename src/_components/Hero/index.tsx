@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './index.module.scss';
 
-export default function Hero() {
+export function Hero() {
   return (
     <section className={styles.container}>
       <h1 className={styles.logo}>

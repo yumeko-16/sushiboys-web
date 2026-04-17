@@ -1,38 +1,30 @@
 @use '@/styles/mixin';
 
-.footer {
-  padding: 16px 24px;
-  margin-top: 80px;
+.wrapper {
+  padding: var(--space-xl) 0;
   color: var(--white);
-  text-align: center;
   background-color: var(--black);
 }
 
+.flexContainer {
+  @include mixin.sideBySideCenter;
+
+  gap: 2em;
+}
+
 .nav {
-  margin-bottom: 16px;
-}
-
-.list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px 0;
-  justify-content: center;
-  white-space: nowrap;
+  flex-direction: column;
+  gap: 2em;
+  font-size: clamp(0.875rem, 0.5rem + 0.78vw, 1rem);
 
   @include mixin.tabletScreen {
-    flex-wrap: nowrap;
-    gap: 40px;
-  }
-}
-
-.item {
-  width: 50%;
-
-  @include mixin.tabletScreen {
-    width: auto;
+    flex-direction: row;
   }
 }
 
 .copyright {
-  font-size: 0.875rem;
+  margin-top: var(--space-sm);
+  font-size: clamp(0.75rem, 0.678rem + 0.31vw, 0.875rem);
+  text-align: center;
 }

@@ -1,17 +1,15 @@
 @use '@/styles/mixin';
 
 .header {
-  position: absolute;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 24px 16px 8px;
+  padding: 24px 0 8px;
 
   @include mixin.tabletScreen {
-    padding: 16px 24px 8px;
+    padding: 16px 0 8px;
   }
+}
+
+.flexContainer {
+  @include mixin.spaceBetween;
 }
 
 .link {

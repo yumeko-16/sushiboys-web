@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Container } from '@/_components/Container';
 import styles from './index.module.scss';
 
 const navItems = [
@@ -13,18 +14,15 @@ const navItems = [
 
 export function Footer() {
   return (
-    <footer className={styles.footer}>
-      <nav className={styles.nav}>
-        <ul className={styles.list}>
-          {navItems.map((item) => (
-            <li key={item.id} className={styles.item}>
-              <Link href={item.href}>{item.label}</Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+    <footer className={styles.wrapper}>
+      <Container>
+        <div className={styles.flexContainer}>
+          <div>Sushiboys</div>
+          [SNS]
+        </div>
 
-      <p className={styles.copyright}>©SUSHIBOYS</p>
+        <p className={styles.copyright}>©SUSHIBOYS</p>
+      </Container>
     </footer>
   );
 }

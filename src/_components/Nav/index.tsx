@@ -14,7 +14,7 @@ const navItems = [
   { id: 'contact', href: '/contact', label: 'Contact' },
 ];
 
-export default function Nav() {
+export function Nav() {
   const [navIsOpen, setNavIsOpen] = useState<boolean>(false);
 
   const toggleNav = () => {

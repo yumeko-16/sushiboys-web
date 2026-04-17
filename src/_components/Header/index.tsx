@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import Nav from '@/_components/Nav';
+import { Nav } from '@/_components/Nav';
 import styles from './index.module.scss';
 
-export default function Header() {
+export function Header() {
   return (
     <header className={styles.header}>
       <Link className={styles.link} href="/">

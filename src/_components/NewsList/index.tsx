@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Category from '@/_components/Category';
-import Date from '@/_components/Date';
+import { Category } from '@/_components/Category';
+import { Date } from '@/_components/Date';
 import { News } from '@/_libs/microcms';
 import styles from './index.module.scss';
 
@@ -9,7 +9,7 @@ type Props = {
   news: News[];
 };
 
-export default function NewsList({ news }: Props) {
+export function NewsList({ news }: Props) {
   if (news.length === 0) return <p>記事がありません。</p>;
 
   return (

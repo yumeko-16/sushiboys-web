@@ -1,6 +1,6 @@
 import styles from './index.module.scss';
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer className={styles.footer}>
       <nav className={styles.nav}>

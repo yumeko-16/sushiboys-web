@@ -1,28 +1,26 @@
+import Link from 'next/link';
 import styles from './index.module.scss';
+
+const navItems = [
+  { id: 'home', href: '/', label: 'Home' },
+  { id: 'about', href: '/about', label: 'About' },
+  { id: 'news', href: '/news', label: 'News' },
+  { id: 'discography', href: '/discography', label: 'Discography' },
+  { id: 'goods', href: '/goods', label: 'Goods' },
+  { id: 'picture', href: '/picture', label: 'Picture' },
+  { id: 'contact', href: '/contact', label: 'Contact' },
+];
 
 export function Footer() {
   return (
     <footer className={styles.footer}>
       <nav className={styles.nav}>
-        <ul className={styles.items}>
-          <li className={styles.item}>
-            <a href="/about">About</a>
-          </li>
-          <li className={styles.item}>
-            <a href="/news">News</a>
-          </li>
-          <li className={styles.item}>
-            <a href="/discography">Discography</a>
-          </li>
-          <li className={styles.item}>
-            <a href="/goods">Goods</a>
-          </li>
-          <li className={styles.item}>
-            <a href="/picture">Picture</a>
-          </li>
-          <li className={styles.item}>
-            <a href="/contact">Contact</a>
-          </li>
+        <ul className={styles.list}>
+          {navItems.map((item) => (
+            <li key={item.id} className={styles.item}>
+              <Link href={item.href}>{item.label}</Link>
+            </li>
+          ))}
         </ul>
       </nav>
 

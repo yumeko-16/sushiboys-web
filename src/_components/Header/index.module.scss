@@ -11,8 +11,3 @@
 .flexContainer {
   @include mixin.spaceBetween;
 }
-
-.link {
-  font-weight: 700;
-  text-transform: uppercase;
-}

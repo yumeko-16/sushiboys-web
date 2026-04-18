@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import styles from './index.module.scss';
+import styles from './Nav.module.scss';
 
 const navItems = [
   { id: 'home', href: '/', label: 'Home' },

@@ -1,5 +1,5 @@
-import { Hero } from '@/_components/Hero';
-import { PostBody } from '@/_components/PostBody';
+import { Hero } from '@/_components/Hero/Hero';
+import { PostBody } from '@/_components/PostBody/PostBody';
 
 export default function About() {
   return (

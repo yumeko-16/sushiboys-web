@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './index.module.scss';
+import styles from './SiteName.module.scss';
 
 export function SiteName() {
   return (

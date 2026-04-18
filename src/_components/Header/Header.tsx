@@ -1,7 +1,7 @@
-import { Container } from '@/_components/Container';
-import { SiteName } from '@/_components/SiteName';
-import { Nav } from '@/_components/Nav';
-import styles from './index.module.scss';
+import { Container } from '@/_components/Container/Container';
+import { SiteName } from '@/_components/SiteName/SiteName';
+import { Nav } from '@/_components/Nav/Nav';
+import styles from './Header.module.scss';
 
 export function Header() {
   return (

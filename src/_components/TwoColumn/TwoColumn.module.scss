@@ -1,0 +1,38 @@
+@use '@/styles/mixin';
+
+.flexContainer {
+  @include mixin.sideBySide;
+
+  gap: var(--space-md);
+  margin: var(--space-md) 0 var(--space-lg);
+}
+
+.main {
+  @include mixin.tabletScreen {
+    width: 768px;
+  }
+}
+
+.sidebar {
+  @include mixin.tabletScreen {
+    position: sticky;
+    top: 40px;
+    align-self: flex-start;
+    width: 240px;
+  }
+}
+
+.sidebar * {
+  @include mixin.tabletScreen {
+    text-align: right;
+  }
+}
+
+.sidebar :is(div, ul) {
+  @include mixin.tabletScreen {
+    place-content: flex-end;
+    place-items: flex-end;
+    width: fit-content;
+    margin-left: auto;
+  }
+}

@@ -1,6 +1,6 @@
-import { Hero } from '@/_components/Hero';
-import { NewsList } from '@/_components/NewsList';
-import { ButtonLink } from '@/_components/ButtonLink';
+import { Hero } from '@/_components/Hero/Hero';
+import { NewsList } from '@/_components/NewsList/NewsList';
+import { ButtonLink } from '@/_components/ButtonLink/ButtonLink';
 import { getNewsList } from '@/_libs/microcms';
 import { TOP_NEWS_LIMIT } from '@/_constants';
 import styles from './page.module.scss';

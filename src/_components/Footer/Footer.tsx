@@ -1,6 +1,6 @@
-import { Container } from '@/_components/Container';
-import { SiteName } from '@/_components/SiteName';
-import styles from './index.module.scss';
+import { Container } from '@/_components/Container/Container';
+import { SiteName } from '@/_components/SiteName/SiteName';
+import styles from './Footer.module.scss';
 
 export function Footer() {
   return (

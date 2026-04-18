@@ -1,5 +1,6 @@
 import { Hero } from '@/_components/Hero/Hero';
 import { PostBody } from '@/_components/PostBody/PostBody';
+import { Contact } from '@/_components/Contact/Contact';
 
 export default function About() {
   return (
@@ -20,6 +21,8 @@ export default function About() {
           アヒルの形をしたゴムボートのようなものを客席に投げるLIVEに定評がある。
         </p>
       </PostBody>
+
+      <Contact />
     </>
   );
 }

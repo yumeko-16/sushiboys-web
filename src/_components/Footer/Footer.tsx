@@ -1,5 +1,6 @@
 import { Container } from '@/_components/Container/Container';
 import { SiteName } from '@/_components/SiteName/SiteName';
+import { Social } from '@/_components/Social/Social';
 import styles from './Footer.module.scss';
 
 export function Footer() {
@@ -8,7 +9,7 @@ export function Footer() {
       <Container>
         <div className={styles.flexContainer}>
           <SiteName />
-          [SNS]
+          <Social iconColor="var(--white, #fff)" />
         </div>
 
         <p className={styles.copyright}>©SUSHIBOYS</p>

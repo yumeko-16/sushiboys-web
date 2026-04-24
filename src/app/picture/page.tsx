@@ -3,7 +3,7 @@ import { Hero } from '@/_components/Hero/Hero';
 export default function Picture() {
   return (
     <>
-      <Hero />
+      <Hero heading="Picture" subHeading="視覚資料" />
     </>
   );
 }

@@ -3,7 +3,7 @@ import { Hero } from '@/_components/Hero/Hero';
 export default function Discography() {
   return (
     <>
-      <Hero />
+      <Hero heading="Discography" subHeading="兵装記録" />
     </>
   );
 }

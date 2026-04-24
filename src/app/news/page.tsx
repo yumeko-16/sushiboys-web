@@ -8,7 +8,7 @@ export default async function News() {
 
   return (
     <>
-      <Hero />
+      <Hero heading="News" subHeading="戦況報告" />
 
       <Sheet>
         <NewsList news={news} />

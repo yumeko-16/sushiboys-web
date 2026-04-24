@@ -11,7 +11,7 @@ import { Contact } from '@/_components/Contact/Contact';
 export default function About() {
   return (
     <>
-      <Hero />
+      <Hero heading="About" subHeading="組織概要" />
 
       <Container>
         <TwoColumn>

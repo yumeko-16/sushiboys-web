@@ -12,7 +12,7 @@ export default async function Home() {
 
   return (
     <>
-      <Hero />
+      <Hero heading="SUSHIBOYS" imageOn />
 
       <section className={styles.news}>
         <h2 className={styles.newsTitle}>News</h2>

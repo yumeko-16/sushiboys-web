@@ -7,8 +7,8 @@ const data = {
       id: '1',
       image: {
         url: '/member_farmhouse.jpg',
-        width: 240,
-        height: 240,
+        width: 480,
+        height: 480,
       },
       name: 'FARMHOUSE',
       position: 'CEO',
@@ -19,8 +19,8 @@ const data = {
       id: '2',
       image: {
         url: '/member_santena.jpg',
-        width: 240,
-        height: 240,
+        width: 480,
+        height: 480,
       },
       name: 'サンテナ',
       position: 'COO',
@@ -31,8 +31,8 @@ const data = {
       id: '3',
       image: {
         url: '/member_neo-yoshikawa.jpg',
-        width: 240,
-        height: 240,
+        width: 480,
+        height: 480,
       },
       name: 'neo yoshikawa',
       position: 'CTO',

@@ -1,3 +1,5 @@
+@use '@/styles/mixin';
+
 .member {
   display: flex;
   gap: 40px;
@@ -13,7 +15,12 @@
 }
 
 .image {
+  width: 240px;
   border-radius: var(--border-radius);
+}
+
+.image img {
+  @include mixin.img;
 }
 
 .name {

@@ -16,7 +16,13 @@ export function Hero({ heading, subHeading, imageOn = false }: Props) {
     >
       {imageOn ? (
         <h1 className={styles.logo}>
-          <Image src="/logo.webp" alt={heading} width={3000} height={2000} />
+          <Image
+            src="/logo.webp"
+            alt={heading}
+            width={3000}
+            height={2000}
+            priority
+          />
         </h1>
       ) : (
         <Container>

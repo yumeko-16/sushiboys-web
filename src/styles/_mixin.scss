@@ -30,6 +30,12 @@
   }
 }
 
+@mixin img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 @mixin spaceBetween {
   display: flex;
   align-items: center;

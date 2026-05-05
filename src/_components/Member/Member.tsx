@@ -13,7 +13,7 @@ const data = {
       name: 'FARMHOUSE',
       position: 'CEO',
       profile:
-        '以前は大手ソフトウェア企業の上級幹部として勤務し、新市場進出や収益成長に成功。',
+        '腹に赤子を宿している。いつも自分の腹をさすって語りかけているからきっとそうなのだろう。',
     },
     {
       id: '2',
@@ -36,7 +36,7 @@ const data = {
       },
       name: 'neo yoshikawa',
       position: 'CTO',
-      profile: '電話交換手。',
+      profile: '電話交換手。小説の中だと頻繁に惨殺される。',
     },
   ],
 };
@@ -50,13 +50,15 @@ export function Member() {
         <div>
           {data.contents.map((member) => (
             <article key={member.id} className={styles.member}>
-              <Image
-                className={styles.image}
-                src={member.image.url}
-                alt=""
-                width={member.image.width}
-                height={member.image.height}
-              />
+              <figure className={styles.image}>
+                <Image
+                  src={member.image.url}
+                  alt=""
+                  width={member.image.width}
+                  height={member.image.height}
+                  priority
+                />
+              </figure>
 
               <dl>
                 <dt className={styles.name}>{member.name}</dt>

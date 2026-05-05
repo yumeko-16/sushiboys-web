@@ -1,3 +1,5 @@
+@use '@/styles/mixin';
+
 .container {
   &[data-image='true'] {
     display: flex;
@@ -15,6 +17,10 @@
 
 .logo {
   width: min(92%, 500px);
+}
+
+.logo img {
+  @include mixin.img;
 }
 
 .heading {

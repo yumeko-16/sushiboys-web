@@ -5,7 +5,7 @@ import { Sheet } from '@/_components/Sheet/Sheet';
 import { Member } from '@/_components/Member/Member';
 import styles from './page.module.scss';
 
-export default function About() {
+export default function Page() {
   return (
     <>
       <Hero heading="About" subHeading="組織概要" />

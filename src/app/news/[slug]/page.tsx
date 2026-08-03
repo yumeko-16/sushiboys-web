@@ -6,7 +6,7 @@ type Props = {
   }>;
 };
 
-export default async function NewsDetail({ params }: Props) {
+export default async function Page({ params }: Props) {
   const { slug } = await params;
   const data = await getNewsDetail(slug);
 

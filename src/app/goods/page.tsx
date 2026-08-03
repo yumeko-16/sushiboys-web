@@ -1,6 +1,6 @@
 import { Hero } from '@/_components/Hero/Hero';
 
-export default function Goods() {
+export default function Page() {
   return (
     <>
       <Hero heading="Goods" subHeading="物資" />

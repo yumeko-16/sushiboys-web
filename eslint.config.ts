@@ -1,8 +1,12 @@
 import { defineConfig } from 'eslint/config';
+import tsParser from '@typescript-eslint/parser';
 
 export default defineConfig([
   {
-    files: ['**/*.{js,ts,tsx}'],
+    files: ['**/*.{ts,tsx}'],
+    languageOptions: {
+      parser: tsParser,
+    },
     rules: {},
   },
 ]);

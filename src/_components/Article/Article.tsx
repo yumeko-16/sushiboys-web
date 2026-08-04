@@ -11,9 +11,7 @@ type Props = {
 export default function Article({ data }: Props) {
   return (
     <main>
-      <h1></h1>
-
-      <p></p>
+      <h1>{data.title}</h1>
 
       <div>
         <Category category={data.category} />

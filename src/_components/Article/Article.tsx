@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import type { News } from '@/_libs/microcms';
 import { Date } from '@/_components/Date/Date';
@@ -14,7 +15,9 @@ export default function Article({ data }: Props) {
       <h1>{data.title}</h1>
 
       <div>
-        <Category category={data.category} />
+        <Link href={`/news/category/${data.category.id}`}>
+          <Category category={data.category} />
+        </Link>
         <Date date={data.publishedAt ?? data.createdAt} />
       </div>
 

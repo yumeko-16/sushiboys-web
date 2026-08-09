@@ -2,6 +2,7 @@ import { getCategoryDetail, getNewsList } from '@/_libs/microcms';
 import { notFound } from 'next/navigation';
 import { NewsList } from '@/_components/NewsList/NewsList';
 import { Category } from '@/_components/Category/Category';
+import { NEWS_LIST_LIMIT } from '@/_constants';
 
 type Props = {
   params: Promise<{
@@ -13,6 +14,7 @@ export default async function Page({ params }: Props) {
   const { id } = await params;
   const category = await getCategoryDetail(id).catch(notFound);
   const { contents: news } = await getNewsList({
+    limit: NEWS_LIST_LIMIT,
     filters: `category[equals]${id}`,
   });
 

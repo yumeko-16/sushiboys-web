@@ -1,14 +1,21 @@
 import { Hero } from '@/_components/Hero/Hero';
 import { Sheet } from '@/_components/Sheet/Sheet';
 import { NewsList } from '@/_components/NewsList/NewsList';
-import Pagination from '@/_components/Pagination/Pagination';
 import SearchField from '@/_components/SearchField';
 import { getNewsList } from '@/_libs/microcms';
 import { NEWS_LIST_LIMIT } from '@/_constants';
 
-export default async function Page() {
-  const { contents: news, totalCount } = await getNewsList({
+type Props = {
+  searchParams: Promise<{
+    q?: string;
+  }>;
+};
+
+export default async function Page({ searchParams }: Props) {
+  const { q } = await searchParams;
+  const { contents: news } = await getNewsList({
     limit: NEWS_LIST_LIMIT,
+    q,
   });
 
   return (
@@ -19,8 +26,6 @@ export default async function Page() {
         <SearchField />
         <NewsList news={news} />
       </Sheet>
-
-      <Pagination totalCount={totalCount} />
     </>
   );
 }

@@ -3,16 +3,18 @@ import { Hero } from '@/_components/Hero/Hero';
 import { Sheet } from '@/_components/Sheet/Sheet';
 import { NewsList } from '@/_components/NewsList/NewsList';
 import Pagination from '@/_components/Pagination/Pagination';
-import { getNewsList } from '@/_libs/microcms';
+import { getCategoryDetail, getNewsList } from '@/_libs/microcms';
 import { NEWS_LIST_LIMIT } from '@/_constants';
 
 type Props = {
   params: Promise<{
+    id: string;
     current: string;
   }>;
 };
 
 export default async function Page({ params }: Props) {
+  const { id } = await params;
   const { current } = await params;
   const parsed = parseInt(current, 10);
 
@@ -20,7 +22,9 @@ export default async function Page({ params }: Props) {
     notFound();
   }
 
+  const category = await getCategoryDetail(id).catch(notFound);
   const { contents: news, totalCount } = await getNewsList({
+    filters: `category[equals]${category.id}`,
     limit: NEWS_LIST_LIMIT,
     offset: NEWS_LIST_LIMIT * (parsed - 1),
   });
@@ -37,7 +41,11 @@ export default async function Page({ params }: Props) {
         <NewsList news={news} />
       </Sheet>
 
-      <Pagination totalCount={totalCount} current={parsed} />
+      <Pagination
+        totalCount={totalCount}
+        current={parsed}
+        basePath={`/news/category/${category.id}`}
+      />
     </>
   );
 }

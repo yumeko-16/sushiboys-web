@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import Article from '@/_components/Article/Article';
 import { ButtonLink } from '@/_components/ButtonLink/ButtonLink';
 import { getNewsDetail } from '@/_libs/microcms';
@@ -6,11 +7,16 @@ type Props = {
   params: Promise<{
     slug: string;
   }>;
+  searchParams: {
+    dk?: string;
+  };
 };
 
-export default async function Page({ params }: Props) {
+export default async function Page({ params, searchParams }: Props) {
   const { slug } = await params;
-  const data = await getNewsDetail(slug);
+  const data = await getNewsDetail(slug, { draftKey: searchParams.dk }).catch(
+    notFound,
+  );
 
   return (
     <>

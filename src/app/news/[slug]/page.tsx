@@ -1,6 +1,6 @@
-import { getNewsDetail } from '@/_libs/microcms';
 import Article from '@/_components/Article/Article';
 import { ButtonLink } from '@/_components/ButtonLink/ButtonLink';
+import { getNewsDetail } from '@/_libs/microcms';
 
 type Props = {
   params: Promise<{

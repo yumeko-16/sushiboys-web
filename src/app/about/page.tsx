@@ -1,8 +1,8 @@
-import { Hero } from '@/_components/Hero';
-import { Container } from '@/_components/Container';
-import { PostBody } from '@/_components/PostBody';
-import { Sheet } from '@/_components/Sheet';
-import { Member } from '@/_components/Member';
+import Hero from '@/_components/Hero';
+import Container from '@/_components/Container';
+import PostBody from '@/_components/PostBody';
+import Sheet from '@/_components/Sheet';
+import Member from '@/_components/Member';
 import styles from './page.module.scss';
 
 export default function Page() {

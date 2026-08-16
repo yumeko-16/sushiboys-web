@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
-import { Sheet } from '@/_components/Sheet';
-import { NewsList } from '@/_components/NewsList';
-import { Category } from '@/_components/Category';
+import Sheet from '@/_components/Sheet';
+import NewsList from '@/_components/NewsList';
+import Category from '@/_components/Category';
 import Pagination from '@/_components/Pagination';
 import { getCategoryDetail, getNewsList } from '@/_libs/microcms';
 import { NEWS_LIST_LIMIT } from '@/_constants';

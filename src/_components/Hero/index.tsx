@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Container } from '@/_components/Container';
+import Container from '@/_components/Container';
 import styles from './index.module.scss';
 
 type Props = {
@@ -8,7 +8,7 @@ type Props = {
   imageOn?: boolean;
 };
 
-export function Hero({ heading, subHeading, imageOn = false }: Props) {
+export default function Hero({ heading, subHeading, imageOn = false }: Props) {
   return (
     <section
       className={styles.container}

@@ -54,7 +54,10 @@ const snsItems: SnsItem[] = [
   },
 ];
 
-export function Social({ iconSize = 'initial', iconColor = 'initial' }: Props) {
+export default function Social({
+  iconSize = 'initial',
+  iconColor = 'initial',
+}: Props) {
   return (
     <ul
       className={styles.list}

@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import styles from './index.module.scss';
 
-export function Container({
+export default function Container({
   children,
   large = false,
 }: {

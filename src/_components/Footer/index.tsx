@@ -1,9 +1,9 @@
-import { Container } from '@/_components/Container';
-import { SiteName } from '@/_components/SiteName';
-import { Social } from '@/_components/Social';
+import Container from '@/_components/Container';
+import SiteName from '@/_components/SiteName';
+import Social from '@/_components/Social';
 import styles from './index.module.scss';
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className={styles.wrapper}>
       <Container>

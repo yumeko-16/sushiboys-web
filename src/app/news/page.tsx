@@ -1,6 +1,6 @@
-import { Hero } from '@/_components/Hero';
-import { Sheet } from '@/_components/Sheet';
-import { NewsList } from '@/_components/NewsList';
+import Hero from '@/_components/Hero';
+import Sheet from '@/_components/Sheet';
+import NewsList from '@/_components/NewsList';
 import Pagination from '@/_components/Pagination';
 import SearchField from '@/_components/SearchField';
 import { getNewsList } from '@/_libs/microcms';

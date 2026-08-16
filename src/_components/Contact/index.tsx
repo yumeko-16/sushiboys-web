@@ -1,7 +1,7 @@
-import { Social } from '@/_components/Social';
+import Social from '@/_components/Social';
 import styles from './index.module.scss';
 
-export function Contact() {
+export default function Contact() {
   return (
     <div className={styles.stack}>
       <h3 className={styles.heading}>Contact</h3>

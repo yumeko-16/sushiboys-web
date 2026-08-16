@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { Container } from '@/_components/Container/Container';
-import styles from './Hero.module.scss';
+import { Container } from '@/_components/Container';
+import styles from './index.module.scss';
 
 type Props = {
   heading: string;

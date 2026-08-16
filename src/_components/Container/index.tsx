@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import styles from './Container.module.scss';
+import styles from './index.module.scss';
 
 export function Container({
   children,

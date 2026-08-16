@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Category } from '@/_components/Category/Category';
-import { Date } from '@/_components/Date/Date';
+import { Category } from '@/_components/Category';
+import { Date } from '@/_components/Date';
 import { News } from '@/_libs/microcms';
-import styles from './NewsList.module.scss';
+import styles from './index.module.scss';
 
 type Props = {
   news: News[];

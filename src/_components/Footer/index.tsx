@@ -1,7 +1,7 @@
-import { Container } from '@/_components/Container/Container';
-import { SiteName } from '@/_components/SiteName/SiteName';
-import { Social } from '@/_components/Social/Social';
-import styles from './Footer.module.scss';
+import { Container } from '@/_components/Container';
+import { SiteName } from '@/_components/SiteName';
+import { Social } from '@/_components/Social';
+import styles from './index.module.scss';
 
 export function Footer() {
   return (

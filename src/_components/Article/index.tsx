@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Sheet } from '@/_components/Sheet/Sheet';
-import { Date } from '@/_components/Date/Date';
-import { Category } from '@/_components/Category/Category';
+import { Sheet } from '@/_components/Sheet';
+import { Date } from '@/_components/Date';
+import { Category } from '@/_components/Category';
 import type { News } from '@/_libs/microcms';
-import styles from './Article.module.scss';
+import styles from './index.module.scss';
 
 type Props = {
   data: News;

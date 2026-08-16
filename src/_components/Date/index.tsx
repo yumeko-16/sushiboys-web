@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { ConvertDate } from '@/_components/ConvertDate/ConvertDate';
-import styles from './Date.module.scss';
+import { ConvertDate } from '@/_components/ConvertDate';
+import styles from './index.module.scss';
 
 type Props = {
   date: string;

@@ -1,4 +1,3 @@
-import styles from './Social.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faXTwitter,
@@ -8,6 +7,7 @@ import {
   faYoutube,
   IconDefinition,
 } from '@fortawesome/free-brands-svg-icons';
+import styles from './index.module.scss';
 
 type Props = {
   iconSize?: string;

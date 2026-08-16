@@ -2,8 +2,8 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false;
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import '@/styles/globals.css';
-import { Header } from '@/_components/Header/Header';
-import { Footer } from '@/_components/Footer/Footer';
+import { Header } from '@/_components/Header';
+import { Footer } from '@/_components/Footer';
 
 export default function RootLayout({
   children,

@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import styles from './TwoColumn.module.scss';
+import styles from './index.module.scss';
 
 export function TwoColumn({ children }: { children: ReactNode }) {
   return <div className={styles.flexContainer}>{children}</div>;

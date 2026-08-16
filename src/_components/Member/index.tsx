@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from './Member.module.scss';
+import styles from './index.module.scss';
 
 const data = {
   contents: [

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { NEWS_LIST_LIMIT } from '@/_constants';
-import styles from './Pagination.module.scss';
+import styles from './index.module.scss';
 
 type Props = {
   totalCount: number;

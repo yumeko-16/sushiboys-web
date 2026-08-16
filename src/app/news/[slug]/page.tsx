@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
-import Article from '@/_components/Article/Article';
-import { ButtonLink } from '@/_components/ButtonLink/ButtonLink';
+import Article from '@/_components/Article';
+import { ButtonLink } from '@/_components/ButtonLink';
 import { getNewsDetail } from '@/_libs/microcms';
 
 type Props = {

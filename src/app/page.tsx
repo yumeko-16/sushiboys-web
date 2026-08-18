@@ -5,6 +5,8 @@ import { getNewsList } from '@/_libs/microcms';
 import { TOP_NEWS_LIMIT } from '@/_constants';
 import styles from './page.module.scss';
 
+export const revalidate = 60;
+
 export default async function Page() {
   const data = await getNewsList({
     limit: TOP_NEWS_LIMIT,
